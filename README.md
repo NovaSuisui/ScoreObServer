@@ -1,0 +1,2 @@
+# ScoreObServer
+ base component stu
