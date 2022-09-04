@@ -24,12 +24,16 @@ public class ScoreObServer {
         scS.register(user1);
         scS.register(user2);
         Scanner in = new Scanner(System.in);
-        System.out.print("Enter Score : ");
-        String sc = in.nextLine();
-        scS.setScore(sc);
-        System.out.print("Enter Score 2 : ");
-        sc = in.nextLine();
-        scS.setScore(sc);
+        int i = 1;
+        String sc = "";
+        System.out.print("Enter Score "+i+" : ");
+        sc = in.nextLine(); 
+        while(!sc.isEmpty()){    
+            scS.setScore(sc);
+            i++;
+            System.out.print("Enter Score "+i+" : ");
+            sc = in.nextLine(); 
+        }
     }
     
 }
